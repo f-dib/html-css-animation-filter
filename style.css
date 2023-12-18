@@ -117,9 +117,21 @@
 /* esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+
+    animation: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    100% {
+        transform: rotate(720deg);
+    }
+}
 /* fine esercizio 10 */
 
 /* esercizio 11 */
@@ -127,9 +139,26 @@
     font-size: 60px;
 }
 
+.ex-11-icon:hover {
+    animation: mini-rotate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mini-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(270deg)
+    }
+}
 /* fine esercizio 11 */
 
-
+/* esercizio 12, 13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -160,3 +189,4 @@
     height: 20px;
 }
 
+/* fine esercizio 12, 13 */
