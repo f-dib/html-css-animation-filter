@@ -176,7 +176,7 @@
     position: absolute;
     top: -10px;
     left: 10%;
-    background: #f5f5f5;
+    background: #0dff00;
     width: 60px;
     height: 20px;
 }
@@ -184,14 +184,15 @@
     position: absolute;
     bottom: -10px;
     right: 20%;
-    background: #f5f5f5;
+    background: #fd0000;
     width: 60px;
     height: 20px;
 }
 
-.ex-12-button:hover .ex-12-top-white{
+.ex-12-top-white{
     animation: top;
     animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes top {
@@ -213,9 +214,10 @@
     }
 }
 
-.ex-12-button:hover .ex-12-bottom-white{
+.ex-12-bottom-white{
     animation: bottom;
     animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes bottom {
@@ -237,5 +239,95 @@
     }
 }
 
+.ex-13-top-white{
+    animation: top13;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes top13 {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+
+    20%{
+        top: -10px;
+        left: 100%;
+
+        transform: translateX(-50%);
+    }
+
+    40%{
+        top: 100%;
+        left: 100%;
+
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    60%{
+        top: 100%;
+        left: 0%;
+
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    80%{
+        top: -10px;
+        left: 0%;
+
+        transform: translateX(-50%);
+    }
+
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+
+.ex-13-bottom-white {
+    animation: bottom13;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bottom13 {
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+
+    20%{
+        bottom: -10px;
+        right: 100%;
+
+        transform: translateX(50%);
+    }
+
+    40%{
+        bottom: 100%;
+        right: 100%;
+
+        transform: translateY(50%) translateX(50%);
+    }
+
+    60%{
+        bottom: 100%;
+        right: 0%;
+
+        transform: translateX(50%) translateY(50%);
+    }
+
+    80%{
+        bottom: -10px;
+        right: 0%;
+
+        transform: translateX(50%);
+    }
+
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
 /* fine esercizio 12, 13 */
