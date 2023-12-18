@@ -84,7 +84,7 @@
 }
 
 .ex-7-img{
-    transition: all 1s;  
+    transition: all 3s;  
 }
 
 .ex-7-img:hover{
@@ -92,23 +92,44 @@
 }
 
 .ex-8-img:hover{
-    filter: brightness(0.7) sepia(100%);
+    filter: blur(2px) sepia(100%);
 
     border-radius: 10px;
 }
 /* fine esercizio esercizio 6, 7 e 8 */
 
-
+/* esercizio 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+
+    transition: all 1s;
 }
+
+.ex-9-img:hover{
+    filter: brightness(0.5) blur(1px);
+
+    border-radius: 10px;
+    transform: scale(0.7);
+}
+/* fine esercizio 9 */
+
+/* esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
 }
+
+
+/* fine esercizio 10 */
+
+/* esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+/* fine esercizio 11 */
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
