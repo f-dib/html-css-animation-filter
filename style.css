@@ -176,7 +176,7 @@
     position: absolute;
     top: -10px;
     left: 10%;
-    background: #0dff00;
+    background: #f5f5f5;
     width: 60px;
     height: 20px;
 }
@@ -184,7 +184,7 @@
     position: absolute;
     bottom: -10px;
     right: 20%;
-    background: #fd0000;
+    background: #f5f5f5;
     width: 60px;
     height: 20px;
 }
