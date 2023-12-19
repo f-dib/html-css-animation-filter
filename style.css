@@ -241,7 +241,7 @@
 
 .ex-13-top-white{
     animation: top13;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -269,25 +269,27 @@
         top: 100%;
         left: 0%;
 
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%) scale(.7);
     }
 
     80%{
         top: -10px;
         left: 0%;
 
-        transform: translateX(-50%);
+        transform: translateX(-50%) scale(.7);
     }
 
     100%{
         top: -10px;
         left: 10%;
+
+        transform: scale(.7);
     }
 }
 
 .ex-13-bottom-white {
     animation: bottom13;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -301,12 +303,18 @@
         bottom: -10px;
         right: 100%;
 
+        height: 60px;
+        width: 20px;
+
         transform: translateX(50%);
     }
 
     40%{
         bottom: 100%;
         right: 100%;
+
+        width: 30px;
+        height: 30px;
 
         transform: translateY(50%) translateX(50%);
     }
